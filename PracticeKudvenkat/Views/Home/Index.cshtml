@@ -1,0 +1,30 @@
+﻿@model IEnumerable<PracticeKudvenkat.Models.Employee>
+
+
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+    </table>
+    <tbody>
+        @foreach (var data in Model)
+        {
+            <tr>
+                <td>@data.EmployeeId</td>
+                <td>@data.Name</td>
+                <td>@data.DepartmentName</td>
+            </tr>
+        }
+    </tbody>
+</body>
+</html>
