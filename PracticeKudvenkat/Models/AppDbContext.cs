@@ -8,6 +8,11 @@ namespace PracticeKudvenkat.Models
         {
 
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Seed();
+        }
         public DbSet<Employee> employees { get; set; }
     }
 }
