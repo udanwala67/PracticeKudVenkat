@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WS60\\source\\repos\\PracticeKudvenkat\\PracticeKudvenkat\\PracticeKudvenkat.csproj": {}
+    "G:\\Projects\\PracticeKudVenkat\\PracticeKudvenkat\\PracticeKudvenkat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WS60\\source\\repos\\PracticeKudvenkat\\PracticeKudvenkat\\PracticeKudvenkat.csproj": {
+    "G:\\Projects\\PracticeKudVenkat\\PracticeKudvenkat\\PracticeKudvenkat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WS60\\source\\repos\\PracticeKudvenkat\\PracticeKudvenkat\\PracticeKudvenkat.csproj",
+        "projectUniqueName": "G:\\Projects\\PracticeKudVenkat\\PracticeKudvenkat\\PracticeKudvenkat.csproj",
         "projectName": "PracticeKudvenkat",
-        "projectPath": "C:\\Users\\WS60\\source\\repos\\PracticeKudvenkat\\PracticeKudvenkat\\PracticeKudvenkat.csproj",
+        "projectPath": "G:\\Projects\\PracticeKudVenkat\\PracticeKudvenkat\\PracticeKudvenkat.csproj",
         "packagesPath": "C:\\Users\\WS60\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WS60\\source\\repos\\PracticeKudvenkat\\PracticeKudvenkat\\obj\\",
+        "outputPath": "G:\\Projects\\PracticeKudVenkat\\PracticeKudvenkat\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\WS60\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,28 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.14, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

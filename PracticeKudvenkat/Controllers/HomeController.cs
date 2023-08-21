@@ -41,10 +41,34 @@ namespace PracticeKudvenkat.Controllers
             return View(homeDetailsViewModel);
 
         }
-
         public IActionResult Create()
         {
             return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult Create(Employee employee)
+        {
+            if (ModelState.IsValid)
+            {
+                Employee newEmployee = _employeeRepository.Add(employee);
+                return RedirectToAction("details", "Home");
+            }
+            else
+            {
+                return View();
+            }
+        }
+
+        public IActionResult Update(int EmployeeId)
+        {
+            return View();
+        }
+
+        public IActionResult Delete(int EmployeeId)
+        {
+            return View(EmployeeId);
         }
 
 

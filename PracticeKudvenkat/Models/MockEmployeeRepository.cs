@@ -25,5 +25,34 @@ namespace PracticeKudvenkat.Models
             return _employeeList;
         }
 
+        public Employee Add(Employee employee)
+        {
+            employee = _employeeList.FirstOrDefault(e => e.EmployeeId == employee.EmployeeId);
+            _employeeList.Add(employee);
+            return employee;
+        }
+
+        public Employee Update(Employee employeeChanges)
+        {
+            Employee employee = _employeeList.FirstOrDefault(e => e.EmployeeId == employeeChanges.EmployeeId);
+            if (employee != null)
+            {
+                employee.Email = employeeChanges.Email;
+                employee.DepartmentName = employeeChanges.DepartmentName;
+                employee.Name = employeeChanges.Name;
+            }
+         
+            return employee;
+        }
+
+        public Employee Delete(int EmployeeId)
+        {
+            Employee employee = _employeeList.FirstOrDefault(e => e.EmployeeId == EmployeeId);
+            if (employee != null)
+            {
+                _employeeList.Remove(employee);
+            }
+            return employee;
+        }
     }
 }
